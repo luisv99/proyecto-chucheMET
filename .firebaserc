@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "chuchemet": {
+      "hosting": {
+        "chucheMET": [
+          "chuchemet"
+        ]
+      }
+    }
+  }
+}
