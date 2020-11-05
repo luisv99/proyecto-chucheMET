@@ -11,10 +11,10 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color:#4DA1D5 ;
-    margin-top: 120px;
+    background-color:#14547c ;
+    margin-top: 0px;
     font-family: 'Peddana', serif;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-align: center;
     align-content: center;
@@ -31,16 +31,84 @@
 }
 
 .foto{
-    margin-left: 20px;
-    margin-top: 14px;
+    margin-left: -175px;
+    margin-top: 54px;
 }
 
 .fotowa{
-    margin-left: -5px;
+    margin-top: 41px;
+}
+
+.logofb{
+    height: 42px;
+    width: 42px;
+}
+
+.fotofb{
+    margin-top: 47px;
 }
 
 
 .logowa{
-    height: 55px;
-    width: 90px;
+    height: 57px;
+    width: 92px;
+}
+
+.footer2{
+    color: white;
+    background-color: #4DA1D5;
+    height: 250px;
+    margin-top: 130px;
+}
+
+.dirfoto{
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 50px;
+    width: 40px;
+  }
+
+.divfoto{
+    margin-top: 0px;
+}
+
+.lasmercedes{
+    margin-top: -45px;
+    margin-left: 95px;
+    font-family: 'Peddana', serif;
+    font-size: 25px;
+}
+
+.telffoto{
+    margin-top: 20px;
+    margin-left: 55px;
+    width: 30px;
+    height: 30px;
+}
+
+.txttelf{
+    margin-top: -35px;
+    margin-left: 95px;
+    font-family: 'Peddana', serif;
+    font-size: 25px;
+}
+
+.f{
+    display: flex;
+    justify-content: center;
+    margin-top: -130px;
+}
+
+.redes{
+    font-family: 'Peddana', serif;
+    font-size: 25px;
+    margin-left: -30px;
+}
+
+.interes{
+    text-align: end;
+    margin-right: 70px;
+    font-family: 'Peddana', serif;
+    font-size: 25px;
+    margin-top: -120px;
 }
