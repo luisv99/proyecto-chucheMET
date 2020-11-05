@@ -16,9 +16,10 @@
     height: 70px;
     position: fixed;
     z-index: 100;
-    margin-top: -16px;
+    margin-top: -8px;
     margin-left: -10px;
     width: 100%;
+   
 }
 
 .divnavbar{
@@ -41,10 +42,22 @@
     padding-bottom: 0px;
 }
 
+.elementnavbar1{
+    margin-left: 20px;
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+}
+
 .elementnavbar:first-child{
     margin-left: 0px;
 }
 
 .elementnavbar:hover{
+    background-color:#296D98;
+}
+
+.elementnavbar1:hover{
     background-color:#296D98;
 }

@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 75px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+.body1{
+    
+    height: 100%;
+}
+
+.titulo2{
+    color: #296D98;
+    margin-left: 15px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Acme', sans-serif;
+}
+
+.titulo5{
+    color: black;
+    margin-left: 15px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px
+}
+
+.numbers{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.number{
+    width: 100px;
+    height: 100px;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -40px;
+}
+
+.foto1{
+    width: 300px;
+    height: 300px;
+}
+
+.hershey{
+    margin-top: 30px;
+    width: 300px;
+    height: 150px;
+}
+
+.confirm{
+    margin-top: 25px;
+    height: 150px;
+    width: 300px;
+}
+
+.texto_fotos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -100px;
+}
+
+.tf{
+    color: #296D98;
+    padding-bottom: 55px;
+    font-family: 'Acme', sans-serif;
+}
+
+.body2{
+    margin-top: 20px;
+    background-color: #C4DBFB;
+}
+
+.titulo_tu_lo_pides{
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+    font-size: 40px;
+    font-style: oblique;
+}
+
+.div_delivery{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: -150px;
+}
+
+.foto_delivery{
+    width: 400px;
+    height: 300px;
+}
+
+.texto_delivery{
+    font-size: 30px;
+   margin-left: 250px;
+   margin-top: 200px;
+   font-family: 'Acme', sans-serif;
+}
+
+.ni_cuando{
+    font-size: 30px;
+    margin-left: 320px;
+    font-family: 'Acme', sans-serif;
+}
+
+.texto2_delivery{
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 150px;
+    margin-top: -230px;
+    padding-bottom: 100px;
+    font-family: 'Acme', sans-serif;
+}
+
+.trabaja_24_horas{
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 180px;
+    margin-top: -100px;
+    padding-bottom: 200px;
+    font-family: 'Acme', sans-serif;
+}
+
+.en_toda_caracas{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+    margin-top: -120px;
+    margin-left: 70px;
+    font-family: 'Acme', sans-serif;
+}
+
+.pick_up{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    color: #E74040;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.foto_mapa{
+    width: 500px;
+    height: 250px;
+}
+
+.div_mapfoto{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.location1{
+    margin-left: 230px;
+    margin-top: -180px;
+}
+
+.la_castellana{
+    font-size: 40px;
+    font-family: 'Acme', sans-serif;
+}
+
+.location2{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 250px;
+    margin-top: -50px;
+}
+
+.lagunita{
+    font-size: 40px;
+    font-family: 'Acme', sans-serif;
+}
+
+.location3{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.las_mercedes{
+    font-size: 40px;
+    padding-bottom: 100px;
+    font-family: 'Acme', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+  }
