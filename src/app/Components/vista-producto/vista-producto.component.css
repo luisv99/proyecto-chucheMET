@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.div1{
+    margin-top: 50px;
+    height: 60px;
+    width: 150px;
+    background-color: teal;
+}
+
+.txt1{
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.txt2{
+    padding-left: 36px;
+    margin-top: -8px;
+}

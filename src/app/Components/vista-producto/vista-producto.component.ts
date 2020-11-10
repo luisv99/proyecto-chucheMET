@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConexionService } from 'src/app/Servicios/conexion.service';
 
 @Component({
   selector: 'app-vista-producto',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaProductoComponent implements OnInit {
 
-  constructor() { }
+  items: any;
+
+  constructor(private conexion: ConexionService) { 
+    this.conexion.listaItem().subscribe(item=>{
+    this.items = item;
+    console.log(this.items)
+  })
+}
 
   ngOnInit(): void {
   }

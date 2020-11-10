@@ -153,14 +153,14 @@
 }
 
 .body2{
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #C4DBFB;
 }
 
 .titulo_tu_lo_pides{
     text-align: center;
     color: black;
-    padding-top: 40px;
+    padding-top: 100px;
     font-size: 40px;
     font-style: oblique;
 }
@@ -221,10 +221,15 @@
     font-family: 'Acme', sans-serif;
 }
 
+.body3{
+    background-color:#FEFDF3;
+}
+
 .pick_up{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 0px;
+    padding-top: 100px;
     color: #E74040;
     font-style: italic;
     font-size: 40px;
