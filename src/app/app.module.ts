@@ -12,6 +12,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
 import { ContactoComponent } from './Components/contacto/contacto.component';
+import { VistaProductoComponent } from './vista-producto/vista-producto.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactoComponent } from './Components/contacto/contacto.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ContactoComponent
+    ContactoComponent,
+    VistaProductoComponent
   ],
   imports: [
     BrowserModule,
