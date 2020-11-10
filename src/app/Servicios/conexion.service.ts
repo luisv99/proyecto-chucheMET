@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
-export interface Item { name: string; }
+export interface Item { name: string; 
+                        precio: number;}
 
 @Injectable({
   providedIn: 'root'

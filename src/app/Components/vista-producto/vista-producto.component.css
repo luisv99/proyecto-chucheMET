@@ -8,18 +8,20 @@
 }
 
 .div1{
+    margin-left: 50px;
     margin-top: 50px;
     height: 60px;
     width: 150px;
-    background-color: teal;
+    background-color:#4DA1D5;
+    color: white;
 }
 
 .txt1{
     padding-top: 5px;
-    padding-left: 50px;
+    padding-left: 53px;
 }
 
 .txt2{
-    padding-left: 36px;
+    padding-left: 41px;
     margin-top: -8px;
 }
