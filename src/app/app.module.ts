@@ -16,6 +16,10 @@ import { HomeComponent } from './Components/home/home.component';
 import { ContactoComponent } from './Components/contacto/contacto.component';
 import { VistaProductoComponent } from './Components/vista-producto/vista-producto.component';
 
+
+import { AboutComponent } from './Components/about/about.component';
+import { AdminComponent } from './Components/admin/admin.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,12 @@ import { VistaProductoComponent } from './Components/vista-producto/vista-produc
     FooterComponent,
     HomeComponent,
     ContactoComponent,
+<<<<<<< HEAD
     VistaProductoComponent
+=======
+    AboutComponent,
+    AdminComponent
+>>>>>>> brian
   ],
   imports: [
     BrowserModule,
