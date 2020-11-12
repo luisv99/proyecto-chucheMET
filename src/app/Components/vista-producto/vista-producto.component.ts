@@ -13,7 +13,6 @@ export class VistaProductoComponent implements OnInit {
   constructor(private conexion: ConexionService) { 
     this.conexion.listaItem().subscribe(item=>{
     this.items = item;
-    console.log(this.items)
   })
 }
 

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.engloba{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 40px;
+    width: 200px;
+    background-color:#4DA1D5;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Peddana', serif;
+    font-size: 25px;
+}
+
+.txt1{
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.nameField{
+    margin-top: 10px;
+}
+
+.priceField{
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    border: #4DA1D5 solid;
+}
+
+.divbtn :hover{
+    background-color: #4DA1D5;
+    cursor: pointer;
+}
+
+.inputs{
+    border-radius: 10px;
+}
+
+.icono{
+    text-align: end;
+    display: block;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.icono :hover{
+    cursor: pointer;
+}
+
+#ico{
+    font-size: 20px;
+}
+
+.icono2{
+    text-align: end;
+    display: block;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.icono2 :hover{
+    cursor: pointer;
+}
+
+#ico2{
+    font-size: 20px;
+}

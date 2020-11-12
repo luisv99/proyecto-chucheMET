@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
@@ -15,10 +16,11 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
 import { ContactoComponent } from './Components/contacto/contacto.component';
 import { VistaProductoComponent } from './Components/vista-producto/vista-producto.component';
-
-
 import { AboutComponent } from './Components/about/about.component';
 import { AdminComponent } from './Components/admin/admin.component';
+import { AddProductComponent } from './Components/add-product/add-product.component';
+import { ConexionService } from './Servicios/conexion.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,10 @@ import { AdminComponent } from './Components/admin/admin.component';
     FooterComponent,
     HomeComponent,
     ContactoComponent,
-<<<<<<< HEAD
-    VistaProductoComponent
-=======
+    VistaProductoComponent,
     AboutComponent,
-    AdminComponent
->>>>>>> brian
+    AdminComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +40,11 @@ import { AdminComponent } from './Components/admin/admin.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ConexionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
