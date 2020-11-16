@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
 *{
     margin: 0%;
     padding: 0%;
@@ -17,11 +22,15 @@
 }
 
 .txt1{
-    padding-top: 5px;
-    padding-left: 53px;
+    text-align: center;
+    padding-top: 0px;
+    font-family: 'Peddana', serif;
+    font-size: 25px;
 }
 
 .txt2{
-    padding-left: 41px;
-    margin-top: -8px;
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Peddana', serif;
+    font-size: 25px;
 }

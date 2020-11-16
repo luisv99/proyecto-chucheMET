@@ -7,9 +7,40 @@
     padding: 0%;
 }
 
+.englobador{
+    margin-top: 70px;
+    margin-left: 30px;
+    width: 300px;
+    border: steelblue solid;
+    border-radius: 2%;
+    padding-bottom: 50px;
+}
+
+h1{
+    font-family: 'Peddana', serif;
+    font-size: 60px;
+}
+
+h3{
+    font-family: 'Peddana', serif;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
 .engloba{
-    display: grid;
+    display: inline-grid;
+    column-gap: 0px;
     grid-template-columns: auto auto auto;
+}
+
+.en{
+    margin-top: -565px;
+    padding-bottom: 300px;
+    margin-left: 400px;
+    width: 60%;
+    
+    border-radius: 2%;
 }
 
 .div1{
@@ -28,19 +59,25 @@
 }
 
 .txt1{
-    margin-left: 10px;
-    margin-top: 1px;
+    margin-left: 15px;
+    margin-top: 3px;
 }
 
 .nameField{
-    margin-top: 10px;
+    margin-left: 15px;
+    width: 230px;
+    margin-top: 20px;
 }
 
 .priceField{
+    margin-left: 15px;
+    width: 230px;
     margin-top: 10px;
 }
 
 .btn{
+    margin-bottom: 20px;
+    margin-left: 15px;
     margin-top: 10px;
     border-radius: 30px;
     width: 100px;

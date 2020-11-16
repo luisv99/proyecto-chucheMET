@@ -74,11 +74,11 @@
   }
 
 .divfoto{
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 .lasmercedes{
-    margin-top: -45px;
+    margin-top: -35px;
     margin-left: 95px;
     font-family: 'Peddana', serif;
     font-size: 25px;
@@ -92,7 +92,7 @@
 }
 
 .txttelf{
-    margin-top: -35px;
+    margin-top: -30px;
     margin-left: 95px;
     font-family: 'Peddana', serif;
     font-size: 25px;
@@ -115,7 +115,7 @@
     margin-right: 70px;
     font-family: 'Peddana', serif;
     font-size: 25px;
-    margin-top: -120px;
+    margin-top: -110px;
 }
 
 .links{

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
+
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
@@ -21,6 +22,8 @@ import { AdminComponent } from './Components/admin/admin.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
 import { ConexionService } from './Servicios/conexion.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     VistaProductoComponent,
     AboutComponent,
     AdminComponent,
-    AddProductComponent
+    AddProductComponent,
+    DetalleProductoComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AngularFirestoreModule,
     AngularFireStorageModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    
   ],
   providers: [ConexionService],
   bootstrap: [AppComponent]
