@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+ 
 
 
-
+//Modulos de Firebase
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 
-
+//Componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
@@ -24,6 +25,7 @@ import { ConexionService } from './Servicios/conexion.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
+import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { DetalleProductoComponent } from './Components/detalle-producto/detalle-
     AboutComponent,
     AdminComponent,
     AddProductComponent,
-    DetalleProductoComponent
+    DetalleProductoComponent,
+    VistaUsersComponent, 
   ],
   imports: [
     BrowserModule,
@@ -47,8 +50,7 @@ import { DetalleProductoComponent } from './Components/detalle-producto/detalle-
     AngularFireStorageModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
-    
+    BrowserAnimationsModule    
   ],
   providers: [ConexionService],
   bootstrap: [AppComponent]

@@ -7,15 +7,22 @@ import { ConexionService } from 'src/app/Servicios/conexion.service';
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent implements OnInit {
+  
 
-  item: any={
+  item: any = {
     name:'',
-    precio: ''
+    precio: '',
+    peso: '',
+    descripcion:'',
+    imagen: ''
   }
 
   editarItem: any = {
     name:'',
-    precio: ''
+    precio: '',
+    peso: '',
+    descripcion:'',
+    imagen: ''
   }
 
   items: any;
@@ -33,6 +40,9 @@ export class AddProductComponent implements OnInit {
     this.conexion.agregarItem(this.item);
     this.item.name='';
     this.item.precio='';
+    this.item.peso='';
+    this.item.descripcion='';
+    this.item.imagen='';
   } 
 
   eliminar(item){
@@ -44,7 +54,13 @@ export class AddProductComponent implements OnInit {
     }
     
   agregarItemEditado(){
-    this.conexion.editarItem(this.editarItem);
+    this.conexion.editarItem(this.editarItem)
     }
 
-}
+    alerta(){
+      alert("Producto editado correctamente")
+    }
+  }
+
+
+

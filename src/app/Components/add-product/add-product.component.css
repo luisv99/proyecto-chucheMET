@@ -45,12 +45,12 @@ h3{
 
 .div1{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     text-align: center;
     margin-left: 50px;
     margin-top: 50px;
     height: 40px;
-    width: 200px;
+    width: 240px;
     background-color:#4DA1D5;
     color: white;
     border-radius: 30px;
@@ -59,6 +59,7 @@ h3{
 }
 
 .txt1{
+    margin-right: 100px;
     margin-left: 15px;
     margin-top: 3px;
 }
@@ -113,7 +114,7 @@ h3{
     text-align: end;
     display: block;
     margin-top: 5px;
-    margin-left: 0px;
+    margin-right: 10px;
 }
 
 .icono2 :hover{

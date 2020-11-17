@@ -4,7 +4,11 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 export interface Item { name: string; 
-                        precio: number;}
+                        precio: number;
+                        peso: number;
+                        descripcion: string;
+                        imagen: any;
+                      }
 
 @Injectable({
   providedIn: 'root'
