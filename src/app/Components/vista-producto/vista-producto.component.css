@@ -2,10 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-.container{
+.contain{
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
+.inputt{
+    display: flex;
+    justify-content: center;
+    margin-top: -24px;
+}
+
 
 *{
     margin: 0%;
@@ -19,6 +26,7 @@
     width: 150px;
     background-color:#4DA1D5;
     color: white;
+    border-radius: 10%;
 }
 
 .txt1{
@@ -33,4 +41,26 @@
     margin-top: -30px;
     font-family: 'Peddana', serif;
     font-size: 25px;
+}
+
+#lupa{
+    font-size: 20px;
+    margin-left: 303px;
+    margin-top: 30px;
+}
+
+.lupa{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#inpu{
+    margin-top: 0px;
+}
+
+.labell{
+    margin-right: 10px;
+    margin-left: -40px;
+    
 }

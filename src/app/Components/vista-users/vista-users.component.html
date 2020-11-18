@@ -19,7 +19,7 @@
         <td>{{user.correo}}</td>
         <td>{{user.direccion}}</td>
         <td><button (click)= "editar(user)" data-toggle="modal" data-target="#exampleModal" class="btn btn-warning">Editar</button></td>
-        <td><button (click)="eliminar(user)" class="btn btn-danger">Eliminar</button></td>
+        <td><button (click)="eliminar(user)" data-toggle="modal" data-target="#staticBackdrop" class="btn btn-danger">Eliminar</button></td>
         
       </tr>
 
@@ -85,4 +85,21 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+<div class="modal fade" style="margin-left: 480px; margin-top: 200px;" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel" style="margin-left: 85px;">Usuario eliminado correctamente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary border-0" style="margin-right: 220px;" data-dismiss="modal">Entendido</button>
+      </div>
+    </div>
+  </div>
+</div>
   

@@ -1,0 +1,93 @@
+<h3>Agregar una Categoria</h3>
+<form (ngSubmit)="agregar()">
+
+  <div class="nameField">
+    <span>Nombre</span>
+      <input type="text" placeholder="Ingrese el nombre" class="inputs"
+      name="name" class="form-control"
+      [(ngModel)]="category.name">
+  </div>
+
+  <div class="divbtn" (click)= "alerta()">
+    <button id="btn" class="btn btn-primary" type="submit">Agregar</button>
+</div>
+
+</form>
+
+<table class="table mt-5">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+      <tr *ngFor="let category of categories">
+        <th scope="row">{{category.id}}</th>
+        <td>{{category.name}}</td>
+        <td><button (click)= "editar(category)" data-toggle="modal" data-target="#exampleModal" class="btn btn-warning">Editar</button></td>
+        <td><button (click)= "eliminar(category)" data-toggle="modal" data-target="#staticBackdrop" class="btn btn-danger">Eliminar</button></td>
+        
+      </tr>
+
+
+      <!-- Modal -->
+<div class="modal fade" style="margin-top: 100px;" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel" style="margin-left: 85px;">Se ha eliminado la categoria</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-primary border-0" style="margin-right: 180px;" data-dismiss="modal">Entendido</button>
+            </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+<div class="modal fade" style=" margin-top: 60px;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Producto a editar: {{editarCategory.name}}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         
+            <form (ngSubmit)="agregarCategoryEditado()">
+        
+                    <div class="nameField">
+                    <span>Nombre</span>
+                        <input type="text" placeholder="Ingrese el nombre" class="inputs"
+                        name="name" class="form-control"
+                        [(ngModel)]="editarCategory.name">
+                    </div>
+                    
+                    <div class="divbtn">
+                        <button class="btn btn-primary" (click)="alerta2()" style="margin-top: 50px;" type="submit">Guardar</button>
+                    </div>
+                
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary border-0" style="margin-right: 250px; margin-top: -57px;" data-dismiss="modal">Cerrar</button>
+                    </div>
+        
+            </form>
+        
+    
+    </div>
+      </div>
+    </div>
+  </div>
+  
+
+

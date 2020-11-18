@@ -26,6 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { CategoriasComponent } from './Components/categorias/categorias.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { VistaUsersComponent } from './Components/vista-users/vista-users.compon
     AdminComponent,
     AddProductComponent,
     DetalleProductoComponent,
-    VistaUsersComponent, 
+    VistaUsersComponent,
+    FilterPipe,
+    CategoriasComponent, 
   ],
   imports: [
     BrowserModule,
