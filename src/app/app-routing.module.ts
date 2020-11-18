@@ -7,6 +7,13 @@ import { AboutComponent } from './Components/about/about.component';
 import { AdminComponent } from './Components/admin/admin.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistroComponent} from './Components/registro/registro.component';
+
+
+
+
+
 
 const routes: Routes = [
 {path: '', component: HomeComponent},
@@ -15,7 +22,14 @@ const routes: Routes = [
 {path: 'about' , component: AboutComponent},
 {path: 'admin' , component: AdminComponent},
 {path: 'add' , component: AddProductComponent},
-{path: 'users' , component: VistaUsersComponent}
+{path: 'users' , component: VistaUsersComponent},
+{path: 'login', component: LoginComponent},
+{path: 'registro', component: RegistroComponent}
+
+
+
+
+
 
 ];
 
