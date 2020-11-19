@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "chucheMET"
+  "defaultProject": "chucheMET",
+  "cli": {
+    "analytics": "3a23d01d-84d2-4c84-af73-94651f77e625"
+  }
 }
