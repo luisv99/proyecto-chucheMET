@@ -1,9 +1,20 @@
+<div class="lupa">
+  <i id="lupa" class="fas fa-search"></i>
+</div>
+
+<div class="inputt">
+  <label for="inpu" class="labell">Buscador</label>
+  <input [(ngModel)] = "filterUser" id="inpu" name="filterUser" type="text" class="form-control" placeholder="Buscar usuario por cedula" style="width: 250px; height: 25px;">
+</div>
+
+
 <table class="table mt-5">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">ID</th>
         <th scope="col">Nombre</th>
         <th scope="col">Apellido</th>
+        <th scope="col">Cedula</th>
+        <th scope="col">Usuario</th>
         <th scope="col">Telefono</th>
         <th scope="col">Correo</th>
         <th scope="col">Zona residencial</th>
@@ -11,10 +22,11 @@
         <th scope="col">Eliminar</th>
       </tr>
     </thead>
-      <tr *ngFor="let user of users">
-        <th scope="row">{{user.id}}</th>
+      <tr *ngFor="let user of users | users: filterUser">
         <td>{{user.name}}</td>
         <td>{{user.apellido}}</td>
+        <td>{{user.cedula}}</td>
+        <td>{{user.usuario}}</td>
         <td>{{user.telefono}}</td>
         <td>{{user.correo}}</td>
         <td>{{user.direccion}}</td>
@@ -22,6 +34,9 @@
         <td><button (click)="eliminar(user)" data-toggle="modal" data-target="#staticBackdrop" class="btn btn-danger">Eliminar</button></td>
         
       </tr>
+</table>
+
+
 
       
 <!-- Modal -->
@@ -87,7 +102,7 @@
   </div>
 
   <!-- Modal -->
-<div class="modal fade" style="margin-left: 480px; margin-top: 200px;" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" style="margin-left: 50px; margin-top: 200px;" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

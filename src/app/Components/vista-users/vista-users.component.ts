@@ -8,6 +8,8 @@ import { UsersService } from 'src/app/Servicios/users.service';
 })
 export class VistaUsersComponent implements OnInit {
 
+  filterUser = '';
+
   user: any = {
     name: '',
     apellido: '',

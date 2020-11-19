@@ -28,8 +28,12 @@ import { DetalleProductoComponent } from './Components/detalle-producto/detalle-
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
 
+
+
 //pipes//
 import { FilterPipe } from './pipes/filter.pipe';
+import { UsersPipe } from './pipes/users.pipe';
+import { RegistroComponent } from './Components/registro/registro.component';
 
 
 @NgModule({
@@ -47,7 +51,11 @@ import { FilterPipe } from './pipes/filter.pipe';
     VistaUsersComponent,
     FilterPipe,
     CategoriasComponent,
+    UsersPipe,
+    RegistroComponent, 
 ],
+      
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

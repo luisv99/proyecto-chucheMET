@@ -8,6 +8,13 @@ import { AdminComponent } from './Components/admin/admin.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistroComponent } from './Components/registro/registro.component';
+
+
+
+
+
 
 const routes: Routes = [
 {path: '', component: HomeComponent},
@@ -17,7 +24,10 @@ const routes: Routes = [
 {path: 'admin' , component: AdminComponent},
 {path: 'add' , component: AddProductComponent},
 {path: 'users' , component: VistaUsersComponent},
-{path: 'categorias' , component: CategoriasComponent}
+{path: 'categorias' , component: CategoriasComponent},
+{path: 'login', component: LoginComponent},
+{path: 'registro', component: RegistroComponent},
+
 
 ];
 
