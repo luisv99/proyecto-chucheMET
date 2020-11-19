@@ -50,8 +50,17 @@
 <div class="en">
   <h1 style="text-align: center;">Listado de productos</h1>
   
+  <div class="lupa">
+    <i id="lupa" class="fas fa-search"></i>
+  </div>
+
+  <div class="inputt">
+      <label for="inpu" class="labell">Buscador</label>
+      <input [(ngModel)] = "filterPost" id="inpu" name="filterPost" type="text" class="form-control" placeholder="Buscar producto por nombre" style="width: 250px; height: 25px;">
+  </div>
+  
   <div class="engloba">
-      <div class="div1" *ngFor="let item of items">
+      <div class="div1" *ngFor="let item of items | filter: filterPost">
               <p class="txt1">{{item.name}}</p>
   
               <div class="icono2" (click)="editar(item)" data-toggle="modal" data-target="#exampleModal">

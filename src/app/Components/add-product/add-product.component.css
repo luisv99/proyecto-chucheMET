@@ -58,6 +58,29 @@ h3{
     font-size: 25px;
 }
 
+#inpu{
+    margin-top: 0px;
+}
+
+.labell{
+    margin-right: 10px;
+    margin-left: -40px;
+    
+}
+
+.inputt{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.lupa{
+    display: flex;
+    justify-content: center;
+    margin-left: 305px;
+    margin-top: 0px;
+}
+
 .txt1{
     margin-right: 100px;
     margin-left: 15px;

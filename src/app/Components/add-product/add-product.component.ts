@@ -8,6 +8,7 @@ import { ConexionService } from 'src/app/Servicios/conexion.service';
 })
 export class AddProductComponent implements OnInit {
   
+  filterPost = '' ;
 
   item: any = {
     name:'',
