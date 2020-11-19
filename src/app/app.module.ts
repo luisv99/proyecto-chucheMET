@@ -34,6 +34,7 @@ import { CategoriasComponent } from './Components/categorias/categorias.componen
 import { FilterPipe } from './pipes/filter.pipe';
 import { UsersPipe } from './pipes/users.pipe';
 import { RegistroComponent } from './Components/registro/registro.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { RegistroComponent } from './Components/registro/registro.component';
     CategoriasComponent,
     UsersPipe,
     RegistroComponent, 
+    UsuarioComponent
 ],
       
   
