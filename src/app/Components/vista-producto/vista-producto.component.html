@@ -10,13 +10,13 @@
 </div>
 
 <div class="contain">
-    <div class="card" style="width: 10rem; margin-top: 50px; margin-left: 50px;" *ngFor="let item of items | filter: filterPost">
+    <div class="card" id="product" style="width: 12rem; margin-top: 50px; margin-left: 50px;" *ngFor="let item of items | filter: filterPost">
         <img src="assets/Doritos.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">{{item.precio}}$</h5>
-          <p class="card-text">{{item.name}}</p>
-          <a style="background-color: #4DA1D5; width: 70px; border: #4DA1D5; margin-top: 10px;" href="#" class="btn btn-primary">Agregar</a>
-          <a style="background-color: #4DA1D5; width: 70px; border: #4DA1D5; margin-top: 10px; margin-left: 15px;" href="#" class="btn btn-primary">Detalles</a>
+          <h5 class="card-title" style="margin-left: 5px;">{{item.precio}}$</h5>
+          <p class="card-text"  style="margin-left: 5px;">{{item.name}}</p>
+          <a style="background-color: #4DA1D5; border: #4DA1D5; margin-top: 10px;" id="agregar" href="#" class="btn btn-primary">Agregar</a>
+          <a style="background-color: #4DA1D5; border: #4DA1D5; margin-top: 10px;" id="detalles" href="#" class="btn btn-primary">Detalles</a>
         </div>
       </div>
 </div>
