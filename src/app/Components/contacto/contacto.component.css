@@ -30,16 +30,19 @@ input[type=submit]:hover {
 }
 
 .form{
-  padding-top: 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: #296D98 solid;
+  border-radius: 2%;
+  padding: 15px;
 }
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
   width: 100%;
   padding-top: 90px;
   padding-left: 25%;
-  padding-bottom: 30px;
+  margin-bottom: 0px;
   padding-right: 100px;
   padding-left: 600px;
 }
@@ -51,8 +54,12 @@ input[type=submit]:hover {
   margin-left: 80px;
 }
 
+.separador{
+  margin-bottom: 0px;
+}
+
 .t{
-  margin-top: -55px;
+  margin-top: -42px;
 }
 
 .footer{
@@ -60,11 +67,11 @@ input[type=submit]:hover {
 }
 
 .direccion{
-  margin-top: -62px;
+  margin-top: -42px;
 }
 
 .email{
-  margin-top: -55px;
+  margin-top: -42px;
 }
 
 .social{
@@ -73,8 +80,9 @@ input[type=submit]:hover {
 
 .fotos{
   margin-left: 100px;
-  margin-top: -70px;
+  margin-top: -55px;
   width: 200px;
+  padding-bottom: 150px;
 }
 
 .facebook{
@@ -103,7 +111,7 @@ input[type=submit]:hover {
 
 .contactanos{
   margin-top: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-size: 80px;
   font-family: 'Peddana', serif;
   color:#4DA1D5
@@ -113,7 +121,7 @@ input[type=submit]:hover {
   width: 30px;
   height: 30px;
   margin-left: -40px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .telefono{

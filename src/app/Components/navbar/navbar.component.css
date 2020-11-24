@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *{
     margin: 0%;
@@ -17,9 +18,12 @@
     position: fixed;
     z-index: 100;
     margin-top: -8px;
-    margin-left: -10px;
+    margin-left: 0px;
     width: 100%;
-   
+}
+
+.aa{
+    height: 70px;
 }
 
 .divnavbar{
@@ -28,7 +32,9 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    margin-left: 0px;
 }
+
 
 .elementnavbar{
     text-decoration: none;
@@ -36,7 +42,7 @@
     font-size: 40px;
     color: white;
     margin-left: 0px;
-    padding-top: 3px;
+    padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 0px;

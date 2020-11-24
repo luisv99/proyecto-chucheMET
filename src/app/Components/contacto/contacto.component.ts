@@ -12,4 +12,8 @@ export class ContactoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  msg(){
+    alert('Tu mensaje se ha enviado con exito')
+  }
+
 }

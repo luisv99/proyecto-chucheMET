@@ -1,0 +1,19 @@
+.inputs{
+    border-radius: 10px;
+}
+
+.nameField{
+    margin-left: 50px;
+    width: 230px;
+    margin-top: 20px;
+}
+
+h3{
+    margin-left: 50px;
+}
+
+#btn{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+

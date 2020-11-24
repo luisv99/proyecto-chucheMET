@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.contain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.inputt{
+    display: flex;
+    justify-content: center;
+    margin-top: -24px;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+.txt1{
+    text-align: center;
+    padding-top: 0px;
+    font-family: 'Peddana', serif;
+    font-size: 25px;
+}
+
+.txt2{
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Peddana', serif;
+    font-size: 25px;
+}
+
+#lupa{
+    font-size: 20px;
+    margin-left: 303px;
+    margin-top: 30px;
+}
+
+.lupa{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#inpu{
+    margin-top: 0px;
+}
+
+.labell{
+    margin-right: 10px;
+    margin-left: -40px;
+    
+}
+
+#product{
+    border: #4DA1D5 solid 2px;
+}
+
+#agregar{
+    margin-left: -1px;
+    width: 96px;
+    margin-right: -3px;
+}
+
+#detalles{
+    width: 98px;
+    margin-left: -2px;
+    margin-right: 0px;
+
+}
+
+#detalles :hover{
+    background-color: #296D98;
+}
