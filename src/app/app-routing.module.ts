@@ -13,6 +13,12 @@ import { RegistroComponent } from './Components/registro/registro.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
 
+
+
+
+
+
+
 const routes: Routes = [
 {path: '', component: HomeComponent},
 {path: 'contacto' , component: ContactoComponent},
@@ -26,6 +32,8 @@ const routes: Routes = [
 {path: 'login', component: LoginComponent},
 {path: 'registro', component: RegistroComponent},
 {path: 'usuario', component: UsuarioComponent}
+
+
 ];
 
 @NgModule({

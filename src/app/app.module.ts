@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import{ AngularFireAuthModule} from '@angular/fire/auth';
 
 //Componentes
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +27,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
+<<<<<<< HEAD
 import { CategoriasComponent } from './Components/categorias/categorias.component';
 
 
@@ -35,6 +37,17 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { UsersPipe } from './pipes/users.pipe';
 import { RegistroComponent } from './Components/registro/registro.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
+=======
+<<<<<<< HEAD
+=======
+import { FilterPipe } from './pipes/filter.pipe';
+import { CategoriasComponent } from './Components/categorias/categorias.component';
+import { RegistroComponent } from './components/registro/registro.component';
+>>>>>>> 42872637c44a3eb7b3db66f5eecb8ff17a82ccf5
+import { LoginComponent } from './components/login/login.component';
+>>>>>>> marcos
+
+
 
 
 @NgModule({
@@ -50,7 +63,11 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
     AddProductComponent,
     DetalleProductoComponent,
     VistaUsersComponent,
+<<<<<<< HEAD
+    LoginComponent,
+=======
     FilterPipe,
+<<<<<<< HEAD
     CategoriasComponent,
     UsersPipe,
     RegistroComponent, 
@@ -58,6 +75,13 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 ],
       
   
+=======
+    CategoriasComponent, 
+    RegistroComponent,
+    LoginComponent
+>>>>>>> 42872637c44a3eb7b3db66f5eecb8ff17a82ccf5
+  ],
+>>>>>>> marcos
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -67,7 +91,8 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
     AngularFireStorageModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule    
+    BrowserAnimationsModule,   
+    AngularFireAuthModule, 
   ],
   providers: [ConexionService],
   bootstrap: [AppComponent]

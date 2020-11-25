@@ -180,3 +180,9 @@ form .btn input[type="submit"]{
   font-weight: 500;
   cursor: pointer;
 }
+
+.btn-google{
+  background: #dd4b39;
+  color: #fff;
+  width:100%;
+}
