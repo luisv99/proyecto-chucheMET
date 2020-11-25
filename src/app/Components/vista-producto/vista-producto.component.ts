@@ -10,7 +10,7 @@ import { ConexionService } from 'src/app/Servicios/conexion.service';
 
 
 export class VistaProductoComponent implements OnInit {
-
+  filterPost = '' ;
   items: any;
 
   constructor(private conexion: ConexionService) { 

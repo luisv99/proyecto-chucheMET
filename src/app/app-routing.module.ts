@@ -7,6 +7,7 @@ import { AboutComponent } from './Components/about/about.component';
 import { AdminComponent } from './Components/admin/admin.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
+import { CategoriasComponent } from './Components/categorias/categorias.component';
 import { LoginComponent } from './components/login/login.component';
 
 
@@ -23,12 +24,8 @@ const routes: Routes = [
 {path: 'admin' , component: AdminComponent},
 {path: 'add' , component: AddProductComponent},
 {path: 'users' , component: VistaUsersComponent},
+{path: 'categorias' , component: CategoriasComponent},
 {path: 'login', component: LoginComponent},
-
-
-
-
-
 
 
 ];
