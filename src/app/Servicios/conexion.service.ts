@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument, DocumentSnapshot } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -47,6 +47,10 @@ export class ConexionService {
   editarItem(item){
     this.itemDoc= this.afs.doc<Item>(`items/${item.id}`);
     this.itemDoc.update(item);
+  }
+
+  getItem(item){
+    return this.itemDoc= this.afs.doc<Item>(`items/${item}`);
   }
 
 }

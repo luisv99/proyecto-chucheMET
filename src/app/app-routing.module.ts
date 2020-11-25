@@ -10,18 +10,15 @@ import { VistaUsersComponent } from './Components/vista-users/vista-users.compon
 import { CategoriasComponent } from './Components/categorias/categorias.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './Components/registro/registro.component';
-
-
-
-
-
 import { UsuarioComponent } from './components/usuario/usuario.component';
+import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
 
 const routes: Routes = [
 {path: '', component: HomeComponent},
 {path: 'contacto' , component: ContactoComponent},
 {path: 'vista' , component: VistaProductoComponent},
-{path: 'about' , component: AboutComponent},
+{path: 'vista/:itemId' , component: DetalleProductoComponent},
+{path: 'about' , component: AboutComponent}, 
 {path: 'admin' , component: AdminComponent},
 {path: 'add' , component: AddProductComponent},
 {path: 'users' , component: VistaUsersComponent},

@@ -16,7 +16,7 @@
           <h5 class="card-title" style="margin-left: 5px;">{{item.precio}}$</h5>
           <p class="card-text"  style="margin-left: 5px;">{{item.name}}</p>
           <a style="background-color: #4DA1D5; border: #4DA1D5; margin-top: 10px;" id="agregar" href="#" class="btn btn-primary">Agregar</a>
-          <a style="background-color: #4DA1D5; border: #4DA1D5; margin-top: 10px;" id="detalles" href="#" class="btn btn-primary">Detalles</a>
+          <a [routerLink]="[ '/vista', item.id ]" style="background-color: #4DA1D5; border: #4DA1D5; margin-top: 10px;" id="detalles" class="btn btn-primary">Detalles</a>
         </div>
       </div>
 </div>
