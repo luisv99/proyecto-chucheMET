@@ -31,6 +31,8 @@ import { RegistroComponent } from './Components/registro/registro.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { LoginComponent } from './components/login/login.component';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CartComponent } from './Components/cart/cart.component';
 
 
 
@@ -60,7 +62,8 @@ import { UsersPipe } from './pipes/users.pipe';
     CategoriasComponent,
     UsersPipe,
     RegistroComponent, 
-    UsuarioComponent
+    UsuarioComponent, 
+    CartComponent
 ],
       
   
@@ -76,6 +79,8 @@ import { UsersPipe } from './pipes/users.pipe';
     ReactiveFormsModule,
     BrowserAnimationsModule,   
     AngularFireAuthModule, 
+    BrowserAnimationsModule,
+    NgbModule    
   ],
   providers: [ConexionService],
   bootstrap: [AppComponent]

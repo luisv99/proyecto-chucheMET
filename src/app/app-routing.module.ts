@@ -12,12 +12,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './Components/registro/registro.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
-
-
-
-
-
-
+import { CartComponent } from './Components/cart/cart.component';
 
 const routes: Routes = [
 {path: '', component: HomeComponent},
@@ -31,9 +26,9 @@ const routes: Routes = [
 {path: 'categorias' , component: CategoriasComponent},
 {path: 'login', component: LoginComponent},
 {path: 'registro', component: RegistroComponent},
-{path: 'usuario', component: UsuarioComponent}
-
-
+{path: 'usuario', component: UsuarioComponent},
+{path: 'usuario', component: UsuarioComponent},
+{path: 'cart', component: CartComponent}
 ];
 
 @NgModule({
