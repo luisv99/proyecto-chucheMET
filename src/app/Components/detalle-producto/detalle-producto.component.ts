@@ -20,9 +20,10 @@ export class DetalleProductoComponent implements OnInit {
   ngOnInit(): void {
     this.getURL();
     this.route.paramMap.subscribe((params)=>{
-      this.itemId = params.get('todoId');
+      this.itemId = params.get('itemId');
       this.getItemById();
       console.log('prueba1',params)
+
     })
   }
 
@@ -30,15 +31,20 @@ export class DetalleProductoComponent implements OnInit {
 
   getURL(): void{
     this.route.paramMap.subscribe((params)=>{
-      this.itemId = params.get('todoId');
+      this.itemId = params.get('itemId');
       this.getItemById();
       console.log('prueba2',params)
     })
   }
 
   getItemById():void{
-    this.c.getItem(this.itemId)
-    console.log('prueba3', this.item)
+    this.c.getItem(this.itemId).subscribe((item)=>{
+      this.item = {
+        ...item.payload.data(),
+      };
+    })
+    console.log('prueba3', this.itemId)
+    console.log('item', this.item)
   }
 
   

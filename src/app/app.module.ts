@@ -27,7 +27,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
-<<<<<<< HEAD
+import { RegistroComponent } from './Components/registro/registro.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { LoginComponent } from './components/login/login.component';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
 
 
@@ -35,17 +37,7 @@ import { CategoriasComponent } from './Components/categorias/categorias.componen
 //pipes//
 import { FilterPipe } from './pipes/filter.pipe';
 import { UsersPipe } from './pipes/users.pipe';
-import { RegistroComponent } from './Components/registro/registro.component';
-import { UsuarioComponent } from './components/usuario/usuario.component';
-=======
-<<<<<<< HEAD
-=======
-import { FilterPipe } from './pipes/filter.pipe';
-import { CategoriasComponent } from './Components/categorias/categorias.component';
-import { RegistroComponent } from './components/registro/registro.component';
->>>>>>> 42872637c44a3eb7b3db66f5eecb8ff17a82ccf5
-import { LoginComponent } from './components/login/login.component';
->>>>>>> marcos
+
 
 
 
@@ -63,11 +55,8 @@ import { LoginComponent } from './components/login/login.component';
     AddProductComponent,
     DetalleProductoComponent,
     VistaUsersComponent,
-<<<<<<< HEAD
     LoginComponent,
-=======
     FilterPipe,
-<<<<<<< HEAD
     CategoriasComponent,
     UsersPipe,
     RegistroComponent, 
@@ -75,13 +64,7 @@ import { LoginComponent } from './components/login/login.component';
 ],
       
   
-=======
-    CategoriasComponent, 
-    RegistroComponent,
-    LoginComponent
->>>>>>> 42872637c44a3eb7b3db66f5eecb8ff17a82ccf5
-  ],
->>>>>>> marcos
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

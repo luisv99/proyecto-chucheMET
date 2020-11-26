@@ -50,7 +50,7 @@ export class ConexionService {
   }
 
   getItem(item){
-    return this.itemDoc= this.afs.doc<Item>(`items/${item}`);
+    return this.afs.doc<Item>(`items/${item}`).snapshotChanges();
   }
 
 }
