@@ -9,6 +9,7 @@ import { AddProductComponent } from './Components/add-product/add-product.compon
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 
@@ -26,6 +27,7 @@ const routes: Routes = [
 {path: 'users' , component: VistaUsersComponent},
 {path: 'categorias' , component: CategoriasComponent},
 {path: 'login', component: LoginComponent},
+{path: 'registro', component: RegistroComponent}
 
 
 ];

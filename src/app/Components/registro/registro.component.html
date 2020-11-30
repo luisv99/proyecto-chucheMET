@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    
+    
+</head>
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario" [formGroup]="registroForm" (ngSubmit)="onRegistro()">
+            <!-- Usuario -->
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Escriba su usuario" formControlName="usuario">
+                    
+                </div>
+                
+            </div>
+ 
+            <!--  Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Escriba su nombre" formControlName="name">
+                   
+                </div>
+                
+            </div>
+ 
+            <!-- Contraseña -->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password" placeholder="Escribe tu contraseña" formControlName="contrasena">
+                   
+                </div>
+                
+            </div>
+ 
+            <!-- Contraseña 2 -->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Repetir contraseña" formControlName="contrasena2">
+                    
+                </div>
+                
+            </div>
+ 
+            <!--  Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Escriba su correo Electrónico" formControlName="email">
+                    
+                </div>
+                
+            </div>
+ 
+            <!--Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Escriba su número de teléfono" formControlName="telefono">
+                   
+                </div>
+                
+            </div>
+            
+            <!--Nombre -->
+            <div class="formulario__grupo" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">direccion</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Escriba su direccion" formControlName="direccion">
+                
+                </div>
+                
+            </div>
+ 
+            <!-- Terminos y Condiciones -->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y Condiciones
+                </label>
+            </div>
+ 
+            <div class="formulario__mensaje" id="formulario__mensaje">
+            </div>
+ 
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Registrarse</button>
+            </div>
+            
+ 
+        </form>
+    </main>
+ 
+    
+    
+</body>
+</html>
+

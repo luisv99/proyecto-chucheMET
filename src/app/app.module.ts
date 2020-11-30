@@ -10,6 +10,8 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import{ AngularFireAuthModule} from '@angular/fire/auth';
+import {DataDbService} from './service/data-db.service';
+import { AuthService } from 'src/app/auth/services/auth.service';
 
 //Componentes
 import { AppRoutingModule } from './app-routing.module';
@@ -27,13 +29,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
-<<<<<<< HEAD
-=======
 import { FilterPipe } from './pipes/filter.pipe';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
 import { RegistroComponent } from './components/registro/registro.component';
->>>>>>> 42872637c44a3eb7b3db66f5eecb8ff17a82ccf5
 import { LoginComponent } from './components/login/login.component';
+
 
 
 
@@ -51,14 +51,11 @@ import { LoginComponent } from './components/login/login.component';
     AddProductComponent,
     DetalleProductoComponent,
     VistaUsersComponent,
-<<<<<<< HEAD
     LoginComponent,
-=======
     FilterPipe,
     CategoriasComponent, 
     RegistroComponent,
     LoginComponent
->>>>>>> 42872637c44a3eb7b3db66f5eecb8ff17a82ccf5
   ],
   imports: [
     BrowserModule,
@@ -72,7 +69,7 @@ import { LoginComponent } from './components/login/login.component';
     BrowserAnimationsModule,   
     AngularFireAuthModule, 
   ],
-  providers: [ConexionService],
+  providers: [ConexionService, DataDbService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

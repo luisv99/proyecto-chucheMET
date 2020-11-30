@@ -35,6 +35,19 @@
     margin-left: 0px;
 }
 
+.nav-link{
+    text-decoration: none;
+    font-family: 'Peddana', serif;
+    font-size: 40px;
+    color: white;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+}
+
+
 
 .elementnavbar{
     text-decoration: none;
@@ -47,6 +60,20 @@
     padding-left: 20px;
     padding-bottom: 0px;
 }
+
+
+.divnavbar .li .elementnavbar{
+    text-decoration: none;
+    font-family: 'Peddana', serif;
+    font-size: 40px;
+    color: white;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+}
+  
 
 .elementnavbar1{
     margin-left: 20px;
