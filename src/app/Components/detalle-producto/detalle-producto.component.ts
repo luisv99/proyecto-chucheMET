@@ -22,9 +22,7 @@ export class DetalleProductoComponent implements OnInit {
     this.route.paramMap.subscribe((params)=>{
       this.itemId = params.get('itemId');
       this.getItemById();
-      console.log('prueba1',params)
-
-    })
+})
   }
 
 
@@ -33,7 +31,6 @@ export class DetalleProductoComponent implements OnInit {
     this.route.paramMap.subscribe((params)=>{
       this.itemId = params.get('itemId');
       this.getItemById();
-      console.log('prueba2',params)
     })
   }
 
@@ -43,8 +40,6 @@ export class DetalleProductoComponent implements OnInit {
         ...item.payload.data(),
       };
     })
-    console.log('prueba3', this.itemId)
-    console.log('item', this.item)
   }
 
   

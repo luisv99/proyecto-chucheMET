@@ -1,3 +1,7 @@
+.textoC{
+  margin-top: 20px;
+}
+
 .button {
     border: none;
     color: white;
@@ -12,6 +16,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: 40%;
   }
   
@@ -21,6 +26,7 @@
     border: 2px solid #4CAF50;
     border-radius: 10px;
     text-decoration: none;
+    margin-top: 40px;
   }
   
   .button1:hover {
@@ -49,6 +55,30 @@
 
   .button3:hover {
     background-color: #7d939b;
+    color: white;
+  }
+
+  .button4{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ee4b4b;
+    border-radius: 10px;
+  }
+
+  .button4:hover {
+    background-color: #ee4b4b;
+    color: white;
+  }
+
+  .button5{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ee4bee;
+    border-radius: 10px;
+  }
+
+  .button5:hover {
+    background-color: #ee4bee;
     color: white;
   }
 

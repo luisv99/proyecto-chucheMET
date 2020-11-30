@@ -36,8 +36,13 @@
       <div class="priceField">
         <span>Imagen</span>
           <input cols="10" type="file"
-          name="precio"
+          id="file"
+          #userphoto
+          (change)= "upload($event)"
+          name="image"
+          autocomplete="off"
           [(ngModel)]="item.imagen">
+          <div id="divbtn"><button id="addbtn" (click)="uploadImage()" type="button">Agregar</button></div>
       </div>
       
       <div class="divbtn" data-toggle="modal" data-target="#staticBackdrop">
@@ -119,9 +124,14 @@
           
           <div class="priceField">
             <span>URL de la imagen</span>
-              <input cols="10" rows="5" type="text" placeholder="Ingrese la URL de la imagen" class="inputs"
-              name="precio" class="form-control"
-              [(ngModel)]="editarItem.imagen">
+            <input cols="10" type="file"
+            id="file"
+            #userphoto
+            (change)= "upload($event)"
+            name="image"
+            autocomplete="off"
+            [(ngModel)]="editarItem.imagen">
+            <button (click)="uploadImage()" id="addbtn" type="button">Confirmar</button>
           </div>
           
           <div class="divbtn">

@@ -9,9 +9,9 @@
     </div>
 </div>
 
-<div class="contain">
-    <div class="card" id="product" style="width: 12rem; margin-top: 50px; margin-left: 50px;" *ngFor="let item of items | filter: filterPost">
-        <img src="assets/Doritos.png" class="card-img-top" alt="...">
+<div class="contain" id="cont">
+    <div class="card" id="product" style="width: 19rem; margin-top: 50px; margin-left: 90px;" *ngFor="let item of items | filter: filterPost">
+        <img src="{{item.imagen}}" id="img" alt="">
         <div class="card-body">
           <h5 class="card-title" style="margin-left: 5px;">{{item.precio}}$</h5>
           <p class="card-text"  style="margin-left: 5px;">{{item.name}}</p>

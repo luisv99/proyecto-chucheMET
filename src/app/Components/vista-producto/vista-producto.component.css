@@ -77,3 +77,12 @@
 #detalles :hover{
     background-color: #296D98;
 }
+
+#img{
+    margin-top: 10px;
+    margin-left: 45px;
+    height: 150px;
+    width: 220px;
+    
+}
+

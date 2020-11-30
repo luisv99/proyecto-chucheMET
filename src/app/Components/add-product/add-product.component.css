@@ -50,7 +50,7 @@ h3{
     margin-left: 50px;
     margin-top: 50px;
     height: 40px;
-    width: 240px;
+    width: 260px;
     background-color:#4DA1D5;
     color: white;
     border-radius: 30px;
@@ -82,7 +82,7 @@ h3{
 }
 
 .txt1{
-    margin-right: 100px;
+    margin-right: 60px;
     margin-left: 15px;
     margin-top: 3px;
 }
@@ -99,18 +99,17 @@ h3{
     margin-top: 10px;
 }
 
-.btn{
-    margin-bottom: 20px;
+#addbtn{
     margin-left: 15px;
     margin-top: 10px;
     border-radius: 30px;
     width: 100px;
     height: 30px;
-    border: #4DA1D5 solid;
+    border: #1c71a5 solid;
 }
 
-.divbtn :hover{
-    background-color: #4DA1D5;
+#divbtn :hover{
+    background-color: #d2e0e8;
     cursor: pointer;
 }
 
@@ -147,3 +146,4 @@ h3{
 #ico2{
     font-size: 20px;
 }
+

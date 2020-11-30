@@ -33,6 +33,8 @@ import { LoginComponent } from './components/login/login.component';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartComponent } from './Components/cart/cart.component';
+import { PagosComponent } from './Components/pagos/pagos.component';
+import { ComprasComponent } from './Components/compras/compras.component';
 
 
 
@@ -63,7 +65,10 @@ import { UsersPipe } from './pipes/users.pipe';
     UsersPipe,
     RegistroComponent, 
     UsuarioComponent, 
-    CartComponent
+    PagosComponent, 
+    CartComponent, 
+    ComprasComponent,
+
 ],
       
   

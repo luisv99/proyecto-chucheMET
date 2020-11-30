@@ -161,13 +161,14 @@ body{margin-top:20px;
 
 #cont{
     margin-left: 600px;
-    margin-top: -350px;
+    margin-top: -250px;
 }
 
 #englobador{
-    display: flex;
+   display: flex;
 }
 
 #fotoG{
     margin-top: 90px;
 }
+
