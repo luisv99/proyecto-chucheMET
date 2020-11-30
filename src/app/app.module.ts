@@ -10,6 +10,8 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import{ AngularFireAuthModule} from '@angular/fire/auth';
+import {DataDbService} from './service/data-db.service';
+import { AuthService } from 'src/app/auth/services/auth.service';
 
 //Componentes
 import { AppRoutingModule } from './app-routing.module';
@@ -29,7 +31,9 @@ import { DetalleProductoComponent } from './Components/detalle-producto/detalle-
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
+import { RegistroComponent } from './components/registro/registro.component';
 import { LoginComponent } from './components/login/login.component';
+
 
 
 
@@ -64,7 +68,7 @@ import { LoginComponent } from './components/login/login.component';
     BrowserAnimationsModule,   
     AngularFireAuthModule, 
   ],
-  providers: [ConexionService],
+  providers: [ConexionService, DataDbService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
