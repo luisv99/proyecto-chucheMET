@@ -1,39 +1,56 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from 'src/app/Servicios/users.service';
+import {FormControl, FormGroup} from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/auth/services/auth.service';
+
+
 
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.css']
+  styleUrls: ['./registro.component.css'],
+  providers:[AuthService],
 })
+
+
+
 export class RegistroComponent implements OnInit {
 
-  user: any = {
-    name:'',
-    apellido: '',
-    cedula: '',
-    telefono:'',
-    correo: '',
-    direccion: '',
-    usuario: '',
-    password: '',
-  }
+  registroForm = new FormGroup({
+    usuario: new FormControl(''),
+    nombre: new FormControl(''),
+    contrasena: new FormControl(''),
+    contrasena2: new FormControl(''),
+    email: new FormControl(''),
+    telefono: new FormControl(''),
+    direccion: new FormControl(''),
+  });
 
-  constructor(private userS: UsersService) { }
+ 
+
+  constructor(private authSvc:AuthService, private router: Router) {
+   
+   }
 
   ngOnInit(): void {
   }
 
-  agregarU(){
-    this.userS.agregarUser(this.user);
-    this.user.name='';
-    this.user.apellido='';
-    this.user.cedula='';
-    this.user.telefono='';
-    this.user.correo='';
-    this.user.direccion='';
-    this.user.usuario='';
-    this.user.password='';
+  async onRegistro(){
+    const {email, contrasena}=this.registroForm.value;
+
+    try{
+      const user= await this.authSvc.registro(email,contrasena);
+      if(user){
+        this.router.navigate(['/vista'])
+      }
+
+    }
+    catch(error){console.log(error);}
+   
   }
 
+ 
+
+  
 }

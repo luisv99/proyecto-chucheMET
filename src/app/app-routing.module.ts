@@ -16,6 +16,12 @@ import { CartComponent } from './Components/cart/cart.component';
 import { PagosComponent } from './Components/pagos/pagos.component';
 import { ComprasComponent } from './Components/compras/compras.component';
 
+
+
+
+
+
+
 const routes: Routes = [
 {path: '', component: HomeComponent},
 {path: 'contacto' , component: ContactoComponent},
@@ -32,11 +38,15 @@ const routes: Routes = [
 {path: 'usuario', component: UsuarioComponent},
 {path: 'cart', component: CartComponent},
 {path: 'pagos', component: PagosComponent},
-{path: 'tipoCompra', component: ComprasComponent}
+{path: 'tipoCompra', component: ComprasComponent},
+{path: 'registro', component: RegistroComponent}
+
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

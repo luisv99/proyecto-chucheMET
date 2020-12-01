@@ -10,6 +10,8 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import{ AngularFireAuthModule} from '@angular/fire/auth';
+import {DataDbService} from './service/data-db.service';
+import { AuthService } from 'src/app/auth/services/auth.service';
 
 //Componentes
 import { AppRoutingModule } from './app-routing.module';
@@ -41,6 +43,7 @@ import { ComprasComponent } from './Components/compras/compras.component';
 //pipes//
 import { FilterPipe } from './pipes/filter.pipe';
 import { UsersPipe } from './pipes/users.pipe';
+
 
 
 
@@ -87,7 +90,7 @@ import { UsersPipe } from './pipes/users.pipe';
     BrowserAnimationsModule,
     NgbModule    
   ],
-  providers: [ConexionService],
+  providers: [ConexionService, DataDbService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
