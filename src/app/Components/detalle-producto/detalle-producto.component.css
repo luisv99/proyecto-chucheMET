@@ -169,6 +169,13 @@ body{margin-top:20px;
 }
 
 #fotoG{
-    margin-top: 90px;
+    width: 500px;
+    border: rgb(244, 244, 237) solid;
+    margin-top: 50px;
+    text-align: center;
 }
 
+#img{
+    width: 400px;
+    height: 250px;
+}
