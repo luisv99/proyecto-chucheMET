@@ -33,6 +33,8 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { CategoriasComponent } from './Components/categorias/categorias.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { LoginComponent } from './components/login/login.component';
+import { SendEmailComponent } from './components/send-email/send-email.component';
+
 
 
 
@@ -55,7 +57,9 @@ import { LoginComponent } from './components/login/login.component';
     FilterPipe,
     CategoriasComponent, 
     RegistroComponent,
-    LoginComponent
+    LoginComponent,
+    SendEmailComponent,
+   
   ],
   imports: [
     BrowserModule,

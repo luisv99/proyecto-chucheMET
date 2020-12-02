@@ -22,8 +22,13 @@ export class LoginComponent implements OnInit {
     const {email,contrasena}=this.loginForm.value;
     try{
       const user= await this.authSvc.login(email,contrasena);
-      if (user){
+      if (user && user.user.emailVerified){
+
         this.router.navigate(['/vista']);
+      }else if (user){
+        this.router.navigate(['/sendEmail']);
+      }else {
+        this.router.navigate(['/registro']);
       }
     }
     catch(error){console.log(error)};

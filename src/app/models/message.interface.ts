@@ -1,5 +1,8 @@
 export interface MessageI{
-    email: string;
+    
     name: string;
+    lastName: string;
+    email: string;
+    message: string;
 
 }
