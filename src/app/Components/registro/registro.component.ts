@@ -38,7 +38,7 @@ export class RegistroComponent implements OnInit {
     try{
       const user= await this.authSvc.registro(email,contrasena);
       if(user){
-        this.router.navigate(['/vista'])
+        this.router.navigate(['/sendEmail']);
       }
 
     }

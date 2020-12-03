@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DataDbService} from '../../service/data-db.service';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -7,9 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
-  constructor() { }
+  createFormGroup(){
+    return new FormGroup({
+      name: new FormControl(''),
+      lastName: new FormControl(''),
+      email: new FormControl(''),
+      message: new FormControl('')
+    });
+  }
+
+  contactForm: FormGroup;
+
+  constructor(private dbData: DataDbService) {
+    this.contactForm=this.createFormGroup();
+   }
 
   ngOnInit(): void {
+  }
+
+  onResetForm(){
+    this.contactForm.reset();
+  }
+
+  onSaveForm(){
+    this.dbData.saveMessage(this.contactForm.value);
   }
 
   msg(){
