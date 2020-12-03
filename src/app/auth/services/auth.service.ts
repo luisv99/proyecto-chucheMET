@@ -14,6 +14,17 @@ export class AuthService {
 
   constructor(public afAuth: AngularFireAuth) { }
 
+  async resetPassword(email:string): Promise<void>{
+    try{
+      return this.afAuth.sendPasswordResetEmail(email);
+    }
+    catch(error){console.log(error)}
+  }
+
+  async sendVerificarEmail(): Promise<void>{
+    return (await this.afAuth.currentUser).sendEmailVerification();
+  }
+
   
 
 
@@ -46,6 +57,7 @@ export class AuthService {
         email,
         contrasena
          );
+         this.sendVerificarEmail();
          return result;
     }
     catch(error){console.log(error)}

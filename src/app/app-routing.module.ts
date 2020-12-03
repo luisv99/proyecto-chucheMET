@@ -15,6 +15,9 @@ import { DetalleProductoComponent } from './Components/detalle-producto/detalle-
 import { CartComponent } from './Components/cart/cart.component';
 import { PagosComponent } from './Components/pagos/pagos.component';
 import { ComprasComponent } from './Components/compras/compras.component';
+import { SendEmailComponent } from './components/send-email/send-email.component';
+
+
 
 
 
@@ -39,7 +42,10 @@ const routes: Routes = [
 {path: 'cart', component: CartComponent},
 {path: 'pagos', component: PagosComponent},
 {path: 'tipoCompra', component: ComprasComponent},
-{path: 'registro', component: RegistroComponent}
+{path: 'registro', component: RegistroComponent},
+{path: 'sendEmail', component: SendEmailComponent},
+{ path: 'olvidarContrasena', 
+loadChildren: () => import('./components/olvidar-contrasena/olvidar-contrasena.module').then(m => m.OlvidarContrasenaModule) }
 
 
 ];

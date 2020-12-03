@@ -1,17 +1,17 @@
 <div class="container">
-    <form class="form" action="">
+    <form class="form" action="" [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
         <div class="campos">
             <label for="fname">Nombre</label>
-            <input type="text" id="fname" name="firstname" placeholder="Tu Nombre..">
+            <input type="text" id="fname" name="firstname" placeholder="Tu Nombre.." formControlName="name" >
             
             <label for="lname">Apellido</label>
-            <input type="text" id="lname" name="lastname" placeholder="Tu Apellido..">
+            <input type="text" id="lname" name="lastname" placeholder="Tu Apellido.." formControlName="lastName"  >
             
             <label for="email">E-Mail</label>
-            <input type="text" id="email" name="email" placeholder="Tu E-Mail..">
+            <input type="text" id="email" name="email" placeholder="Tu E-Mail.." formControlName="email" >
             
             <label for="subject">Mensaje</label>
-            <textarea id="subject" name="subject" placeholder="Que nos deseas decir.." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Que nos deseas decir.." style="height:200px" formControlName="message" ></textarea>
             
             <input type="submit" value="Enviar" data-toggle="modal" data-target="#staticBackdrop">
         </div>

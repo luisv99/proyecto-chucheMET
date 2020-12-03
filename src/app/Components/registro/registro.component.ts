@@ -43,21 +43,25 @@ export class RegistroComponent implements OnInit {
 
       const {email, contrasena}=this.registroForm.value;
   
-      try{
-        const user= await this.authSvc.registro(email,contrasena);
-        if(user){
-          this.router.navigate(['/vista'])
-        }
-  
+    try{
+      const user= await this.authSvc.registro(email,contrasena);
+      if(user){
+        this.router.navigate(['/sendEmail']);
       }
-      catch(error){console.log(error);}
+    }
+    catch(error){console.log(error);}
 
-}else{
-
-  this.alertaU();
-}
-   
+    }
   }
+  
+
+
+  
+
+
+  
+   
+
 
   alertaU(){
     alert("Algun campo no es correcto, por favor vuelva a intentarlo")
@@ -92,3 +96,4 @@ password(){
 }
 
  }
+

@@ -11,7 +11,7 @@ export class DataDbService {
   private contactCollection: AngularFirestoreCollection<any>;
 
   constructor(private afs: AngularFirestore) {
-    this.contactCollection=afs.collection<MessageI>('registro');
+    this.contactCollection=afs.collection<MessageI>('Contacto');
    }
 
    saveMessage(newContact: MessageI): void{

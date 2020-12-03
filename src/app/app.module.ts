@@ -43,6 +43,7 @@ import { ComprasComponent } from './Components/compras/compras.component';
 //pipes//
 import { FilterPipe } from './pipes/filter.pipe';
 import { UsersPipe } from './pipes/users.pipe';
+import { SendEmailComponent } from './components/send-email/send-email.component';
 
 
 
@@ -71,11 +72,12 @@ import { UsersPipe } from './pipes/users.pipe';
     PagosComponent, 
     CartComponent, 
     ComprasComponent,
-
-],
-      
-  
-  
+    CategoriasComponent, 
+    LoginComponent,
+    RegistroComponent,
+    LoginComponent,
+    SendEmailComponent,
+   ],  
   imports: [
     BrowserModule,
     AppRoutingModule,
