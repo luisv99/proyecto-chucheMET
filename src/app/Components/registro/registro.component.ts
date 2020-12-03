@@ -83,12 +83,12 @@ get direccion() {
 }
 
 password(){
-  const p = document.getElementById('password')
-  if (p.type === "password") {
+ const p = document.getElementById('password')
+ if (p.type === "password") {
     p.type = "text";
   } else {
   p.type = "password";
-  }
+ }
 }
 
  }
