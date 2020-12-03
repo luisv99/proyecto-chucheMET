@@ -10,14 +10,20 @@
 </div>
 
 <div class="contain" id="cont">
-    <div class="card" id="product" style="width: 19rem; margin-top: 50px; margin-left: 90px;" *ngFor="let item of items | filter: filterPost">
+    <div class="card" id="product" style="width: 19rem; height: 23rem; margin-top: 50px; margin-left: 90px;" *ngFor="let item of items | filter: filterPost">
         <img src="{{item.imagen}}" id="img" alt="">
-        <div class="card-body">
+        <div class="card-body" id="info">
           <h5 class="card-title" style="margin-left: 5px;">{{item.precio}}$</h5>
           <p class="card-text"  style="margin-left: 5px;">{{item.name}}</p>
-          <a style="background-color: #4DA1D5; border: #4DA1D5; margin-top: 10px;" id="agregar" href="#" class="btn btn-primary">Agregar</a>
-          <a [routerLink]="[ '/vista', item.id ]" style="background-color: #4DA1D5; border: #4DA1D5; margin-top: 10px;" id="detalles" class="btn btn-primary">Detalles</a>
-        </div>
+          <div id="flexDiv">
+              <div id="hoverA">
+                  <a style="background-color: #4DA1D5; border: #4DA1D5;" id="agregar" href="#" class="btn btn-primary">Agregar</a>
+                </div>
+                <div id="hoverD">
+                    <a [routerLink]="[ '/vista', item.id ]" style="background-color: #4DA1D5; border: #4DA1D5;" id="detalles" class="btn btn-primary">Detalles</a>
+                </div>
+          </div>
+          </div>
       </div>
 </div>
 

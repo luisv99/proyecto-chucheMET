@@ -161,7 +161,7 @@ body{margin-top:20px;
 
 #cont{
     margin-left: 600px;
-    margin-top: -250px;
+    margin-top: -400px;
 }
 
 #englobador{
@@ -169,13 +169,13 @@ body{margin-top:20px;
 }
 
 #fotoG{
-    width: 500px;
-    border: rgb(244, 244, 237) solid;
-    margin-top: 50px;
-    text-align: center;
+    border:  #cbcbcb solid 2px;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 #img{
-    width: 400px;
-    height: 250px;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }

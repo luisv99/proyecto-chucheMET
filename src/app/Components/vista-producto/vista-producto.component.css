@@ -61,28 +61,34 @@
     border: #4DA1D5 solid 2px;
 }
 
-#agregar{
-    margin-left: -1px;
-    width: 96px;
-    margin-right: -3px;
-}
-
-#detalles{
-    width: 98px;
-    margin-left: -2px;
-    margin-right: 0px;
-
-}
-
-#detalles :hover{
-    background-color: #296D98;
-}
 
 #img{
-    margin-top: 10px;
-    margin-left: 45px;
-    height: 150px;
-    width: 220px;
+    margin-top: -10px;
+   object-fit: contain;
+   height: 100%;
+   width: 100%;
     
 }
+
+#flexDiv{
+    display: flex;
+}
+
+#agregar{
+    width: 80px;
+    border-radius: 0px;
+}
+#detalles{
+    width: 80px;
+    border-radius: 0px;
+}
+
+#hoverA :hover{
+    background-color: chocolate;
+}
+
+#info{
+    padding-bottom: 13px;
+}
+
 
