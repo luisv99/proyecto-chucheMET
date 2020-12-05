@@ -3,6 +3,8 @@ import { UsersService } from 'src/app/Servicios/users.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/auth/services/auth.service';
+import { UserP } from 'src/app/models/user';
+import { UserPService } from 'src/app/Servicios/user-p.service';
 
 
 
@@ -17,6 +19,8 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 
 export class RegistroComponent implements OnInit {
 
+
+
   private emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   registroForm = new FormGroup({
@@ -25,12 +29,13 @@ export class RegistroComponent implements OnInit {
     contrasena: new FormControl('',[Validators.required, Validators.minLength(6)]),
     email: new FormControl('',[Validators.required, Validators.minLength(11), Validators.pattern(this.emailPattern)]),
     telefono: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    cedula: new FormControl('', [Validators.required, Validators.minLength(5)]),
     direccion: new FormControl('', [Validators.required, Validators.minLength(10)]),
   });
 
  
 
-  constructor(private authSvc:AuthService, private router: Router) {
+  constructor(private authSvc:AuthService, private router: Router, private us: UserPService) {
    
    }
 
@@ -46,7 +51,21 @@ export class RegistroComponent implements OnInit {
     try{
       const user= await this.authSvc.registro(email,contrasena);
       if(user){
-        this.router.navigate(['/sendEmail']);
+        const profile: UserP = {
+          userId: user.user.uid,
+          rol:'',
+          usuario:this.registroForm.get('usuario').value,
+          nombre: this.registroForm.get('nombre').value,
+          telefono:this.registroForm.get('telefono').value,
+          cedula:this.registroForm.get('cedula').value,
+          direccion:this.registroForm.get('direccion').value
+        }
+        console.log('usuario-->',user)
+        console.log('profile-->', profile)
+        this.us.createUserProfile(profile).then(()=>{
+        this.router.navigate(['/sendEmail'])
+
+        });
       }
     }
     catch(error){console.log(error);}
@@ -82,18 +101,21 @@ get email() {
 get telefono() {
   return this.registroForm.get('telefono')
 }
+get cedula() {
+  return this.registroForm.get('cedula')
+}
 get direccion() {
   return this.registroForm.get('direccion')
 }
 
-password(){
- const p = document.getElementById('password')
- if (p.type === "password") {
-    p.type = "text";
-  } else {
-  p.type = "password";
- }
-}
+//password(){
+// const p = document.getElementById('password')
+// if (p.type === "password") {
+//    p.type = "text";
+//  } else {
+//  p.type = "password";
+// }
+//}
 
  }
 

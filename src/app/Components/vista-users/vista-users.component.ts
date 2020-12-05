@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from 'src/app/Servicios/users.service';
+import { UserPService } from 'src/app/Servicios/user-p.service';
 
 @Component({
   selector: 'app-vista-users',
@@ -7,32 +7,11 @@ import { UsersService } from 'src/app/Servicios/users.service';
   styleUrls: ['./vista-users.component.css']
 })
 export class VistaUsersComponent implements OnInit {
-
   filterUser = '';
-
-  user: any = {
-    name: '',
-    apellido: '',
-    telefono: '',
-    correo: '',
-    password: '',
-    direccion: '',
-  }
-
-  editarUser: any = {
-    name: '',
-    apellido: '',
-    telefono: '',
-    correo: '',
-    password: '',
-    direccion: '',
-  }
-
-
   users: any;
 
-  constructor(private userS: UsersService) { 
-    this.userS.listaUsers().subscribe(user=>{
+  constructor(private userPS: UserPService) { 
+    this.userPS.listaUsersP().subscribe(user=>{
       this.users = user;
     })
   }
@@ -40,17 +19,17 @@ export class VistaUsersComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  eliminar(user){
-    this.userS.eliminaruser(user);
-    }
+ // eliminar(user){
+   // this.userPS.eliminaruser(user);
+    //}
 
-  editar(user){
-    this.editarUser = user;
+  //editar(user){
+   // this.editarUser = user;
   
-    }
+ //   }
       
-  agregarUserEditado(){
-    this.userS.editarUser(this.editarUser);
-    }
+ // agregarUserEditado(){
+  //  this.userS.editarUser(this.editarUser);
+   // }
 
 }

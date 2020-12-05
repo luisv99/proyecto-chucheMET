@@ -131,17 +131,11 @@
             name="image"
             autocomplete="off"
             [(ngModel)]="editarItem.imagen">
-            <button (click)="uploadImage()" type="button">Confirmar</button>
           </div>
-          
           <div class="divbtn">
-            <button class="btn" (click)="alerta()" type="submit">Guardar</button>
-          </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary border-0" style="margin-right: 250px; margin-top: -52px;" data-dismiss="modal">Cerrar</button>
-        </div>
-      
+            <button class="btn btn-primary" id="btn" (click)="alerta()" type="submit">Guardar</button>
+            <button type="button" id="cerrar" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>   
       </form>
       </div>
     </div>

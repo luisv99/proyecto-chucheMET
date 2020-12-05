@@ -34,13 +34,29 @@
                 </div>
                 
             </div>
+
+            <div class="formulario__grupo" id="grupo__cedula">
+                <label for="cedula" class="formulario__label">Cedula</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="cedula" id="cedula" placeholder="Escriba su cedula" formControlName="cedula">
+                    <div class="alert-danger" *ngIf="cedula.invalid && (cedula.dirty || cedula.touched)">
+                        <div class="container-error-message" *ngIf="cedula.errors.required">
+                            La cedula es requerida
+                        </div>
+                        <div class="container-error-message" *ngIf="cedula.errors.minlength">
+                            Ingrese una cedula valida
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
  
             <!-- Contraseña -->
             <div class="formulario__grupo" id="grupo__password">
                 <label for="password" class="formulario__label">Contraseña</label>
                 <div class="formulario__grupo-input">
                     <input type="password" class="formulario__input" name="password" id="password" placeholder="Escribe tu contraseña" formControlName="contrasena">
-                    <input type="checkbox" (click)="password()">Mostrar contrasena
+                    <input type="checkbox">Mostrar contrasena
                     <div class="alert-danger" *ngIf="contrasena.invalid && (contrasena.dirty || contrasena.touched)">
                         <div class="container-error-message" *ngIf="contrasena.errors.required">
                             La contrasena es requerida

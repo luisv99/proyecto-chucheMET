@@ -147,3 +147,15 @@ h3{
     font-size: 20px;
 }
 
+#btn{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 100px;
+}
+
+#cerrar{
+    margin-top: 9px;
+    margin-left: 5px;
+    width: 100px;
+}
+
