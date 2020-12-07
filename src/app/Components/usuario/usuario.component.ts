@@ -21,20 +21,5 @@ export class UsuarioComponent implements OnInit {
   }
   
   
-  getURL(): void{
-    this.route.paramMap.subscribe((params)=>{
-      this.userId = params.get('userId');
-      this.getUserById();
-    })
-  }
-
-  getUserById():void{
-    this.uS.getUser(this.userId).subscribe((user)=>{
-      this.user = {
-        ...user.payload.data(),
-      };
-    })
-  }
- 
 
 }

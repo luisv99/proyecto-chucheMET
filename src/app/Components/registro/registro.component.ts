@@ -22,14 +22,15 @@ export class RegistroComponent implements OnInit {
 
 
   private emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  mobNumberPattern = "^((\\+91-?)|0)?[0-9]{10}$"; 
 
   registroForm = new FormGroup({
     usuario: new FormControl('', [Validators.required, Validators.minLength(3)]),
     nombre: new FormControl('',[Validators.required, Validators.minLength(6)]),
     contrasena: new FormControl('',[Validators.required, Validators.minLength(6)]),
     email: new FormControl('',[Validators.required, Validators.minLength(11), Validators.pattern(this.emailPattern)]),
-    telefono: new FormControl('', [Validators.required, Validators.minLength(6)]),
-    cedula: new FormControl('', [Validators.required, Validators.minLength(5)]),
+    telefono: new FormControl('', [Validators.required, Validators.pattern(this.mobNumberPattern),Validators.minLength(10)]),
+    cedula: new FormControl('', [Validators.required, Validators.minLength(6)]),
     direccion: new FormControl('', [Validators.required, Validators.minLength(10)]),
   });
 
@@ -68,21 +69,18 @@ export class RegistroComponent implements OnInit {
         });
       }
     }
-    catch(error){console.log(error);}
+    catch(error){
+      console.log(error);
+    }
+  
 
+    }else{
+      this.alertaU();
     }
   }
   
 
-
-  
-
-
-  
-   
-
-
-  alertaU(){
+alertaU(){
     alert("Algun campo no es correcto, por favor vuelva a intentarlo")
   }
 

@@ -91,7 +91,7 @@
             <div class="formulario__grupo" id="grupo__telefono">
                 <label for="telefono" class="formulario__label">Teléfono</label>
                 <div class="formulario__grupo-input">
-                    <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="(codigo de area)-Numero" formControlName="telefono">
+                    <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="Ejemplo: 0414xxxxxxx o 414xxxxxx" formControlName="telefono">
                     <div class="alert-danger" *ngIf="telefono.invalid && (telefono.dirty || telefono.touched)">
                         <div class="container-error-message" *ngIf="telefono.errors.required">
                             El telefono es requerido

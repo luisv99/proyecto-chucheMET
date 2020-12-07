@@ -44,6 +44,7 @@ import { ComprasComponent } from './Components/compras/compras.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { UsersPipe } from './pipes/users.pipe';
 import { SendEmailComponent } from './components/send-email/send-email.component';
+import { FAQComponent } from './Components/faq/faq.component';
 
 
 
@@ -77,6 +78,7 @@ import { SendEmailComponent } from './components/send-email/send-email.component
     RegistroComponent,
     LoginComponent,
     SendEmailComponent,
+    FAQComponent,
    ],  
   imports: [
     BrowserModule,

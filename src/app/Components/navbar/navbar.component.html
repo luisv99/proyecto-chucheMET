@@ -5,7 +5,7 @@
         <a class="elementnavbar" href="vista">Productos</a>
         <a class="elementnavbar" href="contacto">Contactos</a>
         <a class="elementnavbar" href="about">Nosotros</a>
-        <a class="elementnavbar" [routerLink]="[ '/usuario']">Usuario</a>
+        <a class="elementnavbar" href="usuario">Usuario</a>
         <a class="elementnavbar" *ngIf="!isLogged" href="login" >Login</a>
         <a class="elementnavbar1" href="cart"><img src="assets/cart.png" height="40" width="40"></a>
         <a class="elementnavbar" *ngIf="isLogged" (click)="onLogout()" href="vista">logout</a>
