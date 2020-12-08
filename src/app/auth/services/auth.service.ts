@@ -72,6 +72,7 @@ export class AuthService {
     catch(error){console.log(error)}
     
   }
+  
   getCurrentUser(){
       return this.afAuth.authState.pipe(first()).toPromise();
   }

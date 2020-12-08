@@ -20,12 +20,6 @@ import { FAQComponent } from './Components/faq/faq.component';
 
 
 
-
-
-
-
-
-
 const routes: Routes = [
 {path: '', component: HomeComponent},
 {path: 'contacto' , component: ContactoComponent},
