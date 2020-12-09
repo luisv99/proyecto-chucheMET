@@ -25,6 +25,13 @@
           name="precio" class="form-control"
           [(ngModel)]="item.peso">
       </div>
+
+      <div class="priceField">
+        <span>Categoria</span>
+          <input type="text" placeholder="Ingrese la categoria" class="inputs"
+          name="precio" class="form-control"
+          [(ngModel)]="item.categoria">
+      </div>
       
       <div class="priceField">
         <span>Descripcion</span>
@@ -82,7 +89,7 @@
  
 
 <!-- Modal -->
-<div class="modal fade" style="margin-left: 500px; margin-top: 60px;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" style="margin-left: 500px; margin-top: 30px;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -113,6 +120,13 @@
               <input type="text" placeholder="Ingrese el peso" class="inputs"
               name="precio" class="form-control"
               [(ngModel)]="editarItem.peso">
+          </div>
+
+          <div class="priceField">
+            <span>Categoria</span>
+              <input type="text" placeholder="Ingrese la categoria" class="inputs"
+              name="precio" class="form-control"
+              [(ngModel)]="editarItem.categoria">
           </div>
           
           <div class="priceField">

@@ -9,8 +9,27 @@
 
 .inputt{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-top: -24px;
+    margin-left: 50px;
+}
+
+.comobuscar{
+    margin-top: -30px;
+    margin-right: -290px;
+    color: #4DA1D5;
+}
+
+.comobuscar :hover{
+    cursor: pointer;
+    color: #2a74a2;
+}
+
+.inputt2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+    margin-right: 50px;
 }
 
 
@@ -43,13 +62,22 @@
 
 .lupa{
     display: flex;
-    justify-content: center;
-    margin-left: 10px;
+    justify-content: start;
+    margin-left: 35px;
 }
 
-#inpu{
-    margin-top: 0px;
+#lupa2{
+    font-size: 20px;
+    margin-left: 303px;
+    margin-top: 30px;
 }
+
+.lupa2{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 35px;
+}
+
 
 .labell{
     margin-right: 10px;
