@@ -57,6 +57,7 @@
                 <div class="formulario__grupo-input">
                     <input type="password" class="formulario__input" name="password" id="password" placeholder="Escribe tu contraseña" formControlName="contrasena">
                     <input type="checkbox">Mostrar contrasena
+                  
                     <div class="alert-danger" *ngIf="contrasena.invalid && (contrasena.dirty || contrasena.touched)">
                         <div class="container-error-message" *ngIf="contrasena.errors.required">
                             La contrasena es requerida
