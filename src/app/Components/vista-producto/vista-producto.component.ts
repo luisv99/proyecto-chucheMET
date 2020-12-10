@@ -23,4 +23,6 @@ export class VistaProductoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
 }

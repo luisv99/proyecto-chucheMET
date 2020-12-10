@@ -75,7 +75,6 @@ export class AddProductComponent implements OnInit {
     this.item.descripcion='';
     this.item.categoria='';
     this.item.imagen='';
-    console.log('this.item 1:' , this.item)
   } 
 
   eliminar(item){

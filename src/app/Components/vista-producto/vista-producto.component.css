@@ -102,6 +102,10 @@
     display: flex;
 }
 
+#addbtn{
+    border: none;
+}
+
 #agregar{
     width: 80px;
     border-radius: 0px;
@@ -111,12 +115,14 @@
     border-radius: 0px;
 }
 
-#hoverA :hover{
-    background-color: chocolate;
-}
+
 
 #info{
     padding-bottom: 13px;
+}
+
+#inpu{
+    border-radius: 10px;
 }
 
 
