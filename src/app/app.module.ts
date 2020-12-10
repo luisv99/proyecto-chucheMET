@@ -46,6 +46,9 @@ import { UsersPipe } from './pipes/users.pipe';
 import { SendEmailComponent } from './components/send-email/send-email.component';
 import { FAQComponent } from './Components/faq/faq.component';
 import { CategoriasPipe } from './pipes/categorias.pipe';
+import { MetodosPagoComponent } from './components/metodos-pago/metodos-pago.component';
+import { CreditoComponent } from './components/credito/credito.component';
+import { PagoZPComponent } from './components/pago-zp/pago-zp.component';
 
 
 
@@ -81,6 +84,9 @@ import { CategoriasPipe } from './pipes/categorias.pipe';
     SendEmailComponent,
     FAQComponent,
     CategoriasPipe,
+    MetodosPagoComponent,
+    CreditoComponent,
+    PagoZPComponent,
    ],  
   imports: [
     BrowserModule,

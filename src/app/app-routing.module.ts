@@ -17,6 +17,10 @@ import { PagosComponent } from './Components/pagos/pagos.component';
 import { ComprasComponent } from './Components/compras/compras.component';
 import { SendEmailComponent } from './components/send-email/send-email.component';
 import { FAQComponent } from './Components/faq/faq.component';
+import { MetodosPagoComponent } from './components/metodos-pago/metodos-pago.component';
+import { CreditoComponent } from './components/credito/credito.component';
+import { PagoZPComponent } from './components/pago-zp/pago-zp.component';
+
 
 
 
@@ -40,7 +44,10 @@ const routes: Routes = [
 {path: 'sendEmail', component: SendEmailComponent},
 {path: 'FAQ', component: FAQComponent},
 { path: 'olvidarContrasena', 
-loadChildren: () => import('./components/olvidar-contrasena/olvidar-contrasena.module').then(m => m.OlvidarContrasenaModule) }
+loadChildren: () => import('./components/olvidar-contrasena/olvidar-contrasena.module').then(m => m.OlvidarContrasenaModule) },
+{path: "metodosPago", component: MetodosPagoComponent},
+{path: "credito", component: CreditoComponent},
+{path: "pagoZP", component: PagoZPComponent},
 
 
 ];

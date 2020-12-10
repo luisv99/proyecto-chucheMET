@@ -261,3 +261,62 @@
     transition: .3s ease;
     background-color: red;
   }
+
+portafolio{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.portafolio h1{
+    text-align: center;
+    font-size: 38px ;
+    margin:15px 0px 40px;
+
+
+}
+
+.portafolioC{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+     
+}
+
+.portafolioI{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.portafolioT{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: rgba(0,0,0, .7);
+    color: white;
+
+    transform: translateY(100%);
+    
+    
+}
+
+.portafolioI:hover .portafolioT{
+    transform: translateY(0%) ;
+
+}
+
+
+.portafolioT p{
+    text-align: justify;
+}
+.portafolioIMG{
+    
+    transition: all 0.5s;
+}
+
+
+.portafolioI:hover .portafolioIMG{
+    transform: scale(1.15);
+}
