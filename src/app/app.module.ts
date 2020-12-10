@@ -29,11 +29,26 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetalleProductoComponent } from './Components/detalle-producto/detalle-producto.component';
 import { VistaUsersComponent } from './Components/vista-users/vista-users.component';
-import { FilterPipe } from './pipes/filter.pipe';
-import { CategoriasComponent } from './Components/categorias/categorias.component';
-import { RegistroComponent } from './components/registro/registro.component';
+import { RegistroComponent } from './Components/registro/registro.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
 import { LoginComponent } from './components/login/login.component';
+import { CategoriasComponent } from './Components/categorias/categorias.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CartComponent } from './Components/cart/cart.component';
+import { PagosComponent } from './Components/pagos/pagos.component';
+import { ComprasComponent } from './Components/compras/compras.component';
+
+
+
+//pipes//
+import { FilterPipe } from './pipes/filter.pipe';
+import { UsersPipe } from './pipes/users.pipe';
 import { SendEmailComponent } from './components/send-email/send-email.component';
+import { FAQComponent } from './Components/faq/faq.component';
+import { CategoriasPipe } from './pipes/categorias.pipe';
+import { MetodosPagoComponent } from './components/metodos-pago/metodos-pago.component';
+import { CreditoComponent } from './components/credito/credito.component';
+import { PagoZPComponent } from './components/pago-zp/pago-zp.component';
 
 
 
@@ -55,13 +70,24 @@ import { SendEmailComponent } from './components/send-email/send-email.component
     VistaUsersComponent,
     LoginComponent,
     FilterPipe,
+    CategoriasComponent,
+    UsersPipe,
+    RegistroComponent, 
+    UsuarioComponent, 
+    PagosComponent, 
+    CartComponent, 
+    ComprasComponent,
     CategoriasComponent, 
     LoginComponent,
     RegistroComponent,
     LoginComponent,
     SendEmailComponent,
-   
-  ],
+    FAQComponent,
+    CategoriasPipe,
+    MetodosPagoComponent,
+    CreditoComponent,
+    PagoZPComponent,
+   ],  
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -73,6 +99,8 @@ import { SendEmailComponent } from './components/send-email/send-email.component
     ReactiveFormsModule,
     BrowserAnimationsModule,   
     AngularFireAuthModule, 
+    BrowserAnimationsModule,
+    NgbModule    
   ],
   providers: [ConexionService, DataDbService,AuthService],
   bootstrap: [AppComponent]

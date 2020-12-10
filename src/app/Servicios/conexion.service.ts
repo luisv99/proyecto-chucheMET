@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument, DocumentSnapshot } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 export interface Item { name: string; 
                         precio: number;
                         peso: number;
+                        categoria: string;
                         descripcion: string;
                         imagen: any;
                       }
@@ -46,7 +47,11 @@ export class ConexionService {
 
   editarItem(item){
     this.itemDoc= this.afs.doc<Item>(`items/${item.id}`);
-    this.itemDoc.update(item);
+    return this.itemDoc.update(item);
+  }
+
+  getItem(item){
+    return this.afs.doc<Item>(`items/${item}`).snapshotChanges();
   }
 
 }

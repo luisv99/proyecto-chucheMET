@@ -4,7 +4,7 @@
  
 body {
     font-family: 'Roboto', sans-serif; /*tipografia*/
-    background: #E5E5E5;
+    background: #4d4c4c;
 }
  
 main {
@@ -47,7 +47,12 @@ main {
     outline: none;
     box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
-
+ 
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
  
 .formulario__input-error-activo {
     display: block;

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireStorage } from '@angular/fire/storage';
+import { Observable } from 'rxjs';
+import { finalize } from 'rxjs/operators';
 import { ConexionService } from 'src/app/Servicios/conexion.service';
 
 @Component({
@@ -8,12 +11,19 @@ import { ConexionService } from 'src/app/Servicios/conexion.service';
 })
 export class AddProductComponent implements OnInit {
   
+  title = "cloudsSorage";
+  selectedFile: File = null;
+  fb;
+  //downloadURL: Observable<string>;
+
+  filterPost = '' ;
 
   item: any = {
     name:'',
     precio: '',
     peso: '',
     descripcion:'',
+    categoria:'',
     imagen: ''
   }
 
@@ -22,12 +32,15 @@ export class AddProductComponent implements OnInit {
     precio: '',
     peso: '',
     descripcion:'',
+    categoria:'',
     imagen: ''
   }
 
   items: any;
+ 
+  filePath:String
 
-  constructor(private conexion: ConexionService) { 
+  constructor(private conexion: ConexionService, private afStorage: AngularFireStorage) { 
     this.conexion.listaItem().subscribe(item=>{
     this.items = item;
   })
@@ -36,13 +49,33 @@ export class AddProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  upload(event) {    
+    this.filePath = event.target.files[0]
+  }
+
+  uploadImage(){
+    console.log('path:',this.filePath)
+    this.afStorage.upload('/images'+Math.random()+this.filePath, this.filePath).then((res)=>{
+      res.ref.getDownloadURL().then((url)=>{
+        console.log('imgURL:',url)
+        this.item.imagen = url;
+        this.agregar();
+      });
+    });
+    
+      
+  }
+  
+
   agregar(){
     this.conexion.agregarItem(this.item);
     this.item.name='';
     this.item.precio='';
     this.item.peso='';
     this.item.descripcion='';
+    this.item.categoria='';
     this.item.imagen='';
+    console.log('this.item 1:' , this.item)
   } 
 
   eliminar(item){
@@ -60,6 +93,8 @@ export class AddProductComponent implements OnInit {
     alerta(){
       alert("Producto editado correctamente")
     }
+
+
   }
 
 

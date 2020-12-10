@@ -25,6 +25,13 @@
           name="precio" class="form-control"
           [(ngModel)]="item.peso">
       </div>
+
+      <div class="priceField">
+        <span>Categoria</span>
+          <input type="text" placeholder="Ingrese la categoria" class="inputs"
+          name="precio" class="form-control"
+          [(ngModel)]="item.categoria">
+      </div>
       
       <div class="priceField">
         <span>Descripcion</span>
@@ -34,10 +41,15 @@
       </div>
       
       <div class="priceField">
-        <span>URL de la imagen</span>
-          <input cols="10" rows="5" type="text" placeholder="Ingrese la URL de la imagen" class="inputs"
-          name="precio" class="form-control"
+        <span>Imagen</span>
+          <input cols="10" type="file"
+          id="file"
+          #userphoto
+          (change)= "upload($event)"
+          name="image"
+          autocomplete="off"
           [(ngModel)]="item.imagen">
+          <div id="divbtn"><button id="addbtn" (click)="uploadImage()" type="button">Agregar</button></div>
       </div>
       
       <div class="divbtn" data-toggle="modal" data-target="#staticBackdrop">
@@ -50,8 +62,17 @@
 <div class="en">
   <h1 style="text-align: center;">Listado de productos</h1>
   
+  <div class="lupa">
+    <i id="lupa" class="fas fa-search"></i>
+  </div>
+
+  <div class="inputt">
+      <label for="inpu" class="labell">Buscador</label>
+      <input [(ngModel)] = "filterPost" id="inpu" name="filterPost" type="text" class="form-control" placeholder="Buscar producto por nombre" style="width: 250px; height: 25px;">
+  </div>
+  
   <div class="engloba">
-      <div class="div1" *ngFor="let item of items">
+      <div class="div1" *ngFor="let item of items | filter: filterPost">
               <p class="txt1">{{item.name}}</p>
   
               <div class="icono2" (click)="editar(item)" data-toggle="modal" data-target="#exampleModal">
@@ -68,7 +89,7 @@
  
 
 <!-- Modal -->
-<div class="modal fade" style="margin-left: 500px; margin-top: 60px;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" style="margin-left: 500px; margin-top: 30px;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -100,6 +121,13 @@
               name="precio" class="form-control"
               [(ngModel)]="editarItem.peso">
           </div>
+
+          <div class="priceField">
+            <span>Categoria</span>
+              <input type="text" placeholder="Ingrese la categoria" class="inputs"
+              name="precio" class="form-control"
+              [(ngModel)]="editarItem.categoria">
+          </div>
           
           <div class="priceField">
             <span>Descripcion</span>
@@ -110,19 +138,18 @@
           
           <div class="priceField">
             <span>URL de la imagen</span>
-              <input cols="10" rows="5" type="text" placeholder="Ingrese la URL de la imagen" class="inputs"
-              name="precio" class="form-control"
-              [(ngModel)]="editarItem.imagen">
+            <input cols="10" type="file"
+            id="file"
+            #userphoto
+            (change)= "upload($event)"
+            name="image"
+            autocomplete="off"
+            [(ngModel)]="editarItem.imagen">
           </div>
-          
           <div class="divbtn">
-            <button class="btn" (click)="alerta()" type="submit">Guardar</button>
-          </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary border-0" style="margin-right: 250px; margin-top: -52px;" data-dismiss="modal">Cerrar</button>
-        </div>
-      
+            <button class="btn btn-primary" id="btn" (click)="alerta()" type="submit">Guardar</button>
+            <button type="button" id="cerrar" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>   
       </form>
       </div>
     </div>
@@ -142,7 +169,7 @@
       <div class="modal-body">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary border-0" style="margin-right: 220px;" data-dismiss="modal">Entendido</button>
+        <button type="button" class="btn btn-primary border-0" style="margin-right: 220px;" data-dismiss="modal">Entendido</button>
       </div>
     </div>
   </div>

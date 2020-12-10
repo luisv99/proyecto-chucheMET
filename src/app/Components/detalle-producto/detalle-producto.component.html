@@ -1,1 +1,34 @@
-<p>detalle-producto works!</p>
+<div class="container bootdey" id="englobador">
+    <div class="col-md-12">
+    <section class="panel">
+          <div class="panel-body">
+              <div class="col-md-6">
+                  <div class="pro-img-details" id="fotoG">
+                      <img src="{{item.imagen}}" id="img" alt="">
+                  </div>
+              </div>
+              <div class="col-md-6" id="cont">
+                  <h4 class="pro-d-title">
+                      <h2 class="">
+                          {{item.name}}
+                      </h2>
+                  </h4>
+                  <p>
+                      {{item.descripcion}}
+                  </p>
+                  <div class="product_meta">
+                      <span class="posted_in"> <strong>Precio: {{item.precio}}$</strong></span>
+                      <span class="tagged_as"><strong>Peso: {{item.peso}} gramos</strong></span>
+                  </div>
+                  <div class="form-group">
+                      <label>Cantidad</label>
+                      <input type="quantiy" placeholder="1" class="form-control quantity">
+                  </div>
+                  <p>
+                      <button class="btn btn-round btn-danger" type="button"><i class="fa fa-shopping-cart"></i> Agregar al carrito</button>
+                  </p>
+              </div>
+          </div>
+      </section>
+      </div>
+      </div>

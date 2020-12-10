@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 export interface User { 
   name: string; 
   apellido: string;
+  cedula: number;
   telefono: number;
   correo: string;
   password: any;

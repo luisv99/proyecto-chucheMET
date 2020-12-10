@@ -9,17 +9,56 @@
     </div>
 </div>
 
-<div class="contain">
-    <div class="card" style="width: 10rem; margin-top: 50px; margin-left: 50px;" *ngFor="let item of items | filter: filterPost">
-        <img src="assets/Doritos.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{item.precio}}$</h5>
-          <p class="card-text">{{item.name}}</p>
-          <a style="background-color: #4DA1D5; width: 70px; border: #4DA1D5; margin-top: 10px;" href="#" class="btn btn-primary">Agregar</a>
-          <a style="background-color: #4DA1D5; width: 70px; border: #4DA1D5; margin-top: 10px; margin-left: 15px;" href="#" class="btn btn-primary">Detalles</a>
-        </div>
+
+
+<div class="inputt2">
+    <div class="comobuscar" data-toggle="modal" data-target="#exampleModal"><strong>Como buscar por Categoria?</strong></div>
+    <label for="inpu" style="margin-right: 10px;">Buscador</label>
+    <input [(ngModel)] = "filterC" type="text" id="inpu" class="form-control" style="width: 250px; height: 25px;" placeholder="Buscar por categoria">
+</div>
+
+<div class="contain" id="cont">
+    <div class="card" id="product" style="width: 19rem; height: 23rem; margin-top: 50px; margin-left: 90px;" *ngFor="let item of items | filter: filterPost | categorias: filterC" >
+        <img src="{{item.imagen}}" id="img" alt="">
+        <div class="card-body" id="info">
+          <h5 class="card-title" style="margin-left: 5px;">{{item.precio}}$</h5>
+          <p class="card-text"  style="margin-left: 5px;">{{item.name}}</p>
+          <div id="flexDiv">
+              <div id="hoverA">
+                  <a style="background-color: #4DA1D5; border: #4DA1D5;" id="agregar" href="#" class="btn btn-primary">Agregar</a>
+                </div>
+                <div id="hoverD">
+                    <a [routerLink]="[ '/vista', item.id ]" style="background-color: #4DA1D5; border: #4DA1D5;" id="detalles" class="btn btn-primary">Detalles</a>
+                </div>
+          </div>
+          </div>
       </div>
 </div>
 
+
+<!-- Modal -->
+<div class="modal fade" style="margin-left: 500px; margin-top: 30px;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">Buscador de categorias</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p>Escriba en el buscador alguna de las categorias que tenemos disponibles:</p>
+            <ul style="margin-left: 20px;">
+                <li>Dulces</li>
+                <li>Salados</li>
+                <li>Cereales</li>
+                <li>Helados</li>
+                <li>Bebidas</li>
+            </ul>
+        
+        </div>
+      </div>
+    </div>
+  
+  
 
 
