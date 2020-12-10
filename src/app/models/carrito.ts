@@ -1,3 +1,6 @@
+import { Bolsa } from './bolsa';
+
 export interface Carrito {
-    bolsas: [];
+    userId: string;
+    bolsas: Bolsa[];
 }

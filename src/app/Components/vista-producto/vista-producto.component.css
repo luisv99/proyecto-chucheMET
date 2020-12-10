@@ -15,7 +15,7 @@
 }
 
 .comobuscar{
-    margin-top: -30px;
+    margin-top: -23px;
     margin-right: -290px;
     color: #4DA1D5;
 }
@@ -104,6 +104,7 @@
 
 #addbtn{
     border: none;
+    color:white;
 }
 
 #agregar{
@@ -114,7 +115,6 @@
     width: 80px;
     border-radius: 0px;
 }
-
 
 
 #info{

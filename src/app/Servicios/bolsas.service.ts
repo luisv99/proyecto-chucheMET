@@ -31,7 +31,7 @@ export class BolsasService {
   }
 
   agregarBolsa(bolsa: Bolsa) {
-    this.bolsasCollection.add(bolsa);
+    return this.bolsasCollection.add(bolsa);
   }
 
   eliminarbolsa(bolsa){
