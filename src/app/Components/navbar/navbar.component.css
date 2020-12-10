@@ -26,6 +26,10 @@
     height: 70px;
 }
 
+#logoC{
+    margin-top: 25px;
+}
+
 .divnavbar{
     display: flex;
     justify-content: center;

@@ -1,7 +1,4 @@
 [1124/180112.818:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
-<<<<<<< Updated upstream
 [1205/135350.909:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
-=======
 [1203/181602.391:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
->>>>>>> Stashed changes
 [1210/072909.266:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
